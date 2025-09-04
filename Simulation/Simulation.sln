@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulation", "Simulation.csproj", "{CCA0E90F-2BFC-4F72-B0BC-2CD0DC672AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "..\Shared\Shared.csproj", "{9AB60C4D-A07D-40BF-A8CA-687A692A016A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCA0E90F-2BFC-4F72-B0BC-2CD0DC672AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCA0E90F-2BFC-4F72-B0BC-2CD0DC672AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCA0E90F-2BFC-4F72-B0BC-2CD0DC672AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCA0E90F-2BFC-4F72-B0BC-2CD0DC672AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB60C4D-A07D-40BF-A8CA-687A692A016A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB60C4D-A07D-40BF-A8CA-687A692A016A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB60C4D-A07D-40BF-A8CA-687A692A016A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB60C4D-A07D-40BF-A8CA-687A692A016A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Simulation.gRPC";
+
+package simulation;
+
+/* Backend to Simulation */
+message SimulationCommand{
+  enum CommandType {
+    PAUSE = 0;
+    RESUME = 1;
+    STOP = 2;
+    UPDATE_CONFIGURATION = 3;
+  }
+
+  CommandType type = 1;
+  string payload = 2;
+}
+
+/* Simulation to Backend */
+message SimulationStatus {
+  enum Status{
+    PAUSED = 0;
+    WORKING = 1;
+    STOPPED = 2;
+    UPDATED = 3;
+    ERROR = 4;
+  }
+  
+  Status status = 1;
+  string payload = 2;
+}
+
+service SimulationControllerService {
+  rpc Control(stream SimulationCommand) returns (stream SimulationStatus);
+}
