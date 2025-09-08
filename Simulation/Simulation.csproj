@@ -15,6 +15,8 @@
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.7"/>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="RabbitMQ.Client" Version="7.1.2" />
         <PackageReference Include="System.Drawing.Common" Version="9.0.8" />
     </ItemGroup>
     
@@ -29,9 +31,9 @@
     <ItemGroup>
       <Folder Include=".resources\images\" />
       <Folder Include="Common\Entity\Construction\BaseBuilding\" />
-      <Folder Include="Common\Entity\Drone\" />
-      <Folder Include="Common\Entity\Rover\" />
-      <Folder Include="Common\Entity\Ship\" />
+      <Folder Include="Common\Entity\Transport\Rover\" />
+      <Folder Include="Common\Entity\Transport\Ship\" />
+      <Folder Include="Common\Entity\Transport\Train\" />
       <Folder Include="Common\Management\" />
     </ItemGroup>
 </Project>
