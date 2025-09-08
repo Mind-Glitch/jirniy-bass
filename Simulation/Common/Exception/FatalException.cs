@@ -1,8 +1,8 @@
-﻿namespace Simulation.Common.Exceptions;
+﻿namespace Simulation.Common.Exception;
 
 public class FatalException : SimulationExceptionBase
 {
-    protected FatalException(string message, Exception? innerException)
+    protected FatalException(string message, System.Exception? innerException)
         : base(ExceptionType.Fatal, message, innerException)
     {
     }

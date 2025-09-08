@@ -1,5 +1,7 @@
-using Simulation.Common.Exceptions;
 using Shared.Service.DependencyInjection.MultiLogger;
+using Simulation.Common.Exception;
+using Simulation.Common.World;
+using Simulation.Common.WorldGeneration;
 
 namespace Simulation;
 
@@ -25,6 +27,16 @@ public class Worker : BackgroundService
         /* Загружать ресурсы и генерировать контент ... */
 
         await _logger.LogInformation("Запуск симуляции ... ");
+
+
+        WorldGeneratorOptions ops = new WorldGeneratorOptions
+        {
+            SoftSurface = true
+        };
+
+        Map map = new Map();
+        map.FindOrCreateChunk(0, 0);
+        ImageGenerator.GenerateImage(map);
 
         while (!stoppingToken.IsCancellationRequested)
         {

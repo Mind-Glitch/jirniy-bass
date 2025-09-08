@@ -1,9 +1,9 @@
-﻿namespace Simulation.Common.Exceptions;
+﻿namespace Simulation.Common.Exception;
 
-public class SimulationExceptionBase : Exception
+public class SimulationExceptionBase : System.Exception
 {
     protected SimulationExceptionBase(ExceptionType exceptionType, string message,
-        Exception? innerException) : base(message, innerException)
+        System.Exception? innerException) : base(message, innerException)
     {
         Type = exceptionType;
     }
