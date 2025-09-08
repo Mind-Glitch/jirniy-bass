@@ -8,60 +8,60 @@ internal class Colonist : Entity
     {
         get => _name;
         set => SetProperty(ref _name, value,
-            Shared.Metrix.Package.Colonist.Name);
+            Shared.Metrics.Package.Colonist.Name);
     }
 
-    private float _hunger = 0;
+    private float _hunger;
 
     internal float Hunger
     {
         get => _hunger;
         set => SetProperty(ref _hunger, value,
-            Shared.Metrix.Package.Colonist.Hunger);
+            Shared.Metrics.Package.Colonist.Hunger);
     }
 
-    private float _thirst = 0;
+    private float _thirst;
 
     internal float Thirst
     {
         get => _thirst;
         set => SetProperty(ref _thirst, value,
-            Shared.Metrix.Package.Colonist.Thirst);
+            Shared.Metrics.Package.Colonist.Thirst);
     }
 
-    private float _mentalState = 0;
+    private float _mentalState;
 
     internal float MentalState
     {
         get => _mentalState;
         set => SetProperty(ref _mentalState, value,
-            Shared.Metrix.Package.Colonist.MentalState);
+            Shared.Metrics.Package.Colonist.MentalState);
     }
 
-    private float _employmentRate = 0;
+    private float _employmentRate;
 
     internal float EmploymentRate
     {
         get => _employmentRate;
         set => SetProperty(ref _employmentRate, value,
-            Shared.Metrix.Package.Colonist.EmploymentRate);
+            Shared.Metrics.Package.Colonist.EmploymentRate);
     }
 
-    private float _health = 0;
+    private float _health;
 
     internal float Health
     {
         get => _health;
         set => SetProperty(ref _health, value,
-            Shared.Metrix.Package.Colonist.Health);
+            Shared.Metrics.Package.Colonist.Health);
     }
 
-    private float _radiationExposure = 0;
+    private float _radiationExposure;
 
     internal float RadiationExposure
     {
         get => _radiationExposure;
         set => SetProperty(ref _radiationExposure, value,
-            Shared.Metrix.Package.Colonist.RadiationExposure);
+            Shared.Metrics.Package.Colonist.RadiationExposure);
     }
 }

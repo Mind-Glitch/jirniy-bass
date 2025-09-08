@@ -1,6 +1,8 @@
-﻿namespace Simulation.Common.Entity.Transport.Drone;
+﻿using Simulation.Common.Entity.Robot;
 
-public class DroneBase : Entity
+namespace Simulation.Common.Entity.Transport.Drone;
+
+public class DroneBase : RobotBase
 {
     
 }

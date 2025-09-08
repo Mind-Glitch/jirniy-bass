@@ -31,9 +31,6 @@
     <ItemGroup>
       <Folder Include=".resources\images\" />
       <Folder Include="Common\Entity\Construction\BaseBuilding\" />
-      <Folder Include="Common\Entity\Transport\Rover\" />
-      <Folder Include="Common\Entity\Transport\Ship\" />
-      <Folder Include="Common\Entity\Transport\Train\" />
       <Folder Include="Common\Management\" />
     </ItemGroup>
 </Project>

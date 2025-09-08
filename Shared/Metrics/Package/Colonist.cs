@@ -1,4 +1,4 @@
-﻿namespace Shared.Metrix.Package;
+﻿namespace Shared.Metrics.Package;
 
 public static class Colonist
 {
