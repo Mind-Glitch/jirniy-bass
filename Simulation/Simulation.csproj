@@ -30,7 +30,6 @@
     
     <ItemGroup>
       <Folder Include=".resources\images\" />
-      <Folder Include="Common\Entity\Construction\BaseBuilding\" />
       <Folder Include="Common\Management\" />
     </ItemGroup>
 </Project>
